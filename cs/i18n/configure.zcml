@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
     i18n_domain="cs.i18n">
 
     <five:registerPackage package="." initialize=".initialize" />
@@ -9,7 +10,7 @@
     <include package="plone.app.i18n"/>
     <include package=".browser"/>
 
-  <genericsetup:registerProfile
+  <gs:registerProfile
       name="default"
       title="cs.i18n"
       directory="profiles/default"

@@ -28,6 +28,7 @@ We found ourselfs constantly change the way Plone and LinguaPlone show the langu
           'setuptools',         
           # -*- Extra requirements: -*-
           'plone.browserlayer',
+          'plone.app.i18n',
       ],
       entry_points="""
       # -*- Entry points: -*-
