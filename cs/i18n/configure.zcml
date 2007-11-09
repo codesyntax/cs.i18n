@@ -2,12 +2,14 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="cs.i18n">
 
     <five:registerPackage package="." initialize=".initialize" />
 
     <include package="plone.browserlayer"/>
     <include package="plone.app.i18n"/>
+    <include zcml:condition="installed Products.LinguaPlone" package="Products.LinguaPlone"/>
     <include package=".browser"/>
 
   <gs:registerProfile
