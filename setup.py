@@ -5,8 +5,7 @@ version = '0.1'
 setup(name='cs.i18n',
       version=version,
       description="Some i18n customizations for Plone default language change forms",
-      long_description="""\
-We found ourselfs constantly change the way Plone and LinguaPlone show the language change forms. This product creates some basic customizations for these cases, using plain text language text links, based on the settings of a custom control-panel""",
+      long_description=open('README.txt').read()
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
