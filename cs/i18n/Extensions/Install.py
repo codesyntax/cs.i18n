@@ -5,6 +5,7 @@ PRODUCT_DEPENDENCIES = ('plone.browserlayer'
                         #'LinguaPlone',
                         )
 EXTENSION_PROFILES = ('plone.browserlayer:default',
+                      'cs.i18n:default',
                       #'Products.LinguaPlone:LinguaPlone',
                       )
 
