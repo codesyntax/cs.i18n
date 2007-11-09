@@ -5,4 +5,18 @@
 
     <five:registerPackage package="." initialize=".initialize" />
 
+    <include package="plone.browserlayer"/>
+    <include package=".browser"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="cs.i18n"
+      directory="profiles/default"
+      description="CS i18n customizations"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+   
+
+
 </configure>

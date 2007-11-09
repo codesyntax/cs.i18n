@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="cs.i18n">
+
+
+  <!-- Generic language change form for content -->
+    <browser:viewlet
+        name="plone.app.i18n.locales.languageselector"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".selector.LanguageSelector"
+        layer="..interfaces.Icsi18nProductLayer"
+        permission="zope2.View"
+        />
+
+
+</configure>
