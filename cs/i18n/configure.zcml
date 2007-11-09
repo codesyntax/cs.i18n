@@ -6,6 +6,7 @@
     <five:registerPackage package="." initialize=".initialize" />
 
     <include package="plone.browserlayer"/>
+    <include package="plone.app.i18n"/>
     <include package=".browser"/>
 
   <genericsetup:registerProfile

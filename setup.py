@@ -15,18 +15,19 @@ We found ourselfs constantly change the way Plone and LinguaPlone show the langu
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='plone i18n languagechange',
+      keywords='plone i18n',
       author='Mikel Larreategi',
       author_email='mlarreategi@codesyntax.com',
       url='http://code.codesyntax.com/private/cs.i18n',
-      license='BSD',
+      license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['cs'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
+          'setuptools',         
           # -*- Extra requirements: -*-
+          'plone.browserlayer',
       ],
       entry_points="""
       # -*- Entry points: -*-
