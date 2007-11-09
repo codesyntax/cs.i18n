@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-version = '0.1'
+version = '0.1',
 
 setup(name='cs.i18n',
-      version=version,
+      version = '0.1',
       description="Some i18n customizations for Plone default language change forms",
       long_description="""\
 We found ourselfs constantly change the way Plone and LinguaPlone show the language change forms. This product creates some basic customizations for these cases, using plain text language text links, based on the settings of a custom control-panel""",
