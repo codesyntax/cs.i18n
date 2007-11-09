@@ -2,11 +2,12 @@
     tal:define="available view/available;
                 languages view/languages;
                 showFlags view/showFlags;">
+
     <ul id="portal-languageselector"
         tal:condition="python:available and len(languages)>=2">
-
-        <li tal:condition="showFlags"
-            tal:repeat="lang languages">
+      
+        <tal:lang repeat="lang languages">
+          <li tal:condition="not:lang/selected">
             <span tal:define="code lang/code;
                               selected lang/selected"
                   tal:omit-tag="selected">
@@ -25,12 +26,10 @@
                                              title python: name;
                                              class python: selected and 'currentItem' or '';" />
                     </tal:flag>
-                    <tal:nonflag condition="not: flag and showFlags">
-                        <span tal:replace="name">language code</span>
-                    </tal:nonflag>
-                </a>
-
+                    <tal:nonflag condition="not: python:flag and showFlags"><span tal:replace="lang/native|lang/name">language native name</span></tal:nonflag></a>
+                &nbsp;
             </span>
-        </li>
+          </li>
+        </tal:lang>
     </ul>
 </tal:language>
