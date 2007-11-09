@@ -12,6 +12,6 @@ class LanguageSelector(LSBase):
         lang_info = self.tool.getAvailableLanguageInformation()
 
         for data in results:
-            data['native'] = lang_info.get(lang).get(u'native', None)
+            data['native'] = lang_info.get(data['code']).get(u'native', None)
 
-        return languages
+        return results

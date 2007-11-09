@@ -21,7 +21,7 @@
        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
        class=".translatable.TranslatableLanguageSelector"
        permission="zope2.View"
-       layer="..interfaces.ICsi18nProductLayer"
+       layer="..interfaces.Icsi18nProductLayer"
        for="Products.LinguaPlone.interfaces.ITranslatable"
      />
 
