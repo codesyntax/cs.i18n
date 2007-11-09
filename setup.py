@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-version = '0.1'
+version = '0.2',
 
 setup(name='cs.i18n',
-      version=version,
+      version = '0.2',
       description="Some i18n customizations for Plone default language change forms",
       long_description=open('README.txt').read()
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
