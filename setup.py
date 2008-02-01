@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 version = '0.2',
 
 setup(name='cs.i18n',
-      version = '0.2',
+      version = version,
       description="Some i18n customizations for Plone default language change forms",
       long_description=open('README.txt').read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
