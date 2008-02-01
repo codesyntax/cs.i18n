@@ -6,7 +6,7 @@
         tal:condition="python:available and len(languages)>=2">
       
       <tal:langs repeat="lang languages">
-        <li tal:condition="not:lang/selected">
+        <li>
             <span tal:define="code lang/code;
                               selected lang/selected"
                   tal:omit-tag="selected">
