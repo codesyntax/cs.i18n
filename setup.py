@@ -28,6 +28,7 @@ setup(name='cs.i18n',
           # -*- Extra requirements: -*-
           'plone.browserlayer',
           'plone.app.i18n',
+          'plone.memoize',
       ],
       entry_points="""
       # -*- Entry points: -*-
