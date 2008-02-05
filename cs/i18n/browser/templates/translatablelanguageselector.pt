@@ -6,13 +6,14 @@
         tal:condition="python:available and len(languages)>=2">
       <tal:langs repeat="lang languages">
         <li tal:define="code lang/code;
-                        selected python:lang['code'] == view.getPreferredLanguage()"
+                        selected lang/selected"
             tal:condition="not:selected">
           <a href=""
              tal:define="flag lang/flag;
-                         name lang/name"
+                         name lang/name;
+                         native lang/native"
              tal:attributes="href lang/url;
-                             title name">
+                             title native|name">
             <tal:flag condition="python:flag and showFlags">
               <img width="14"
                    height="11"
@@ -21,7 +22,7 @@
                                    title python: name;
                                    class python: selected and 'currentItem' or '';" />
             </tal:flag>
-          <tal:nonflag condition="not:python:flag and showFlags"><span tal:replace="lang/native|name">language code</span></tal:nonflag></a>
+          <tal:nonflag condition="not:python:flag and showFlags"><span tal:replace="native|name">language code</span></tal:nonflag></a>
         </li>
       </tal:langs>
     </ul>

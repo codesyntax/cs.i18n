@@ -8,11 +8,12 @@
       
         <tal:lang repeat="lang languages">
         <li tal:define="code lang/code;
-                        selected python:lang['code'] == view.getPreferredLanguage()"
+                        selected lang/selected;"
             tal:condition="not:selected">
           <a href=""
              tal:define="flag lang/flag;
-                         name lang/name"
+                         name lang/name;
+                         native lang/native"
              tal:attributes="href string:${here/absolute_url}/switchLanguage?set_language=${code};
                              title name">
             <tal:flag condition="python:flag and showFlags">
@@ -20,10 +21,10 @@
                    height="11"
                    alt=""
                    tal:attributes="src string:${view/portal_url}${flag};
-                                   title python: name;
+                                   title python: native or name;
                                    class python: selected and 'currentItem' or '';" />
             </tal:flag>
-          <tal:nonflag condition="not: python:flag and showFlags"><span tal:replace="lang/native|lang/name">language native name</span></tal:nonflag></a>
+          <tal:nonflag condition="not: python:flag and showFlags"><span tal:replace="native|name">language native name</span></tal:nonflag></a>
         </li>
         </tal:lang>
     </ul>
