@@ -1,12 +1,9 @@
 import transaction
 from Products.CMFCore.utils import getToolByName
 
-PRODUCT_DEPENDENCIES = ('plone.browserlayer'
-                        #'LinguaPlone',
+PRODUCT_DEPENDENCIES = ('plone.browserlayer',
                         )
-EXTENSION_PROFILES = ('plone.browserlayer:default',
-                      'cs.i18n:default',
-                      #'Products.LinguaPlone:LinguaPlone',
+EXTENSION_PROFILES = ('cs.i18n:default',
                       )
 
 
