@@ -12,7 +12,7 @@ def install(self, reinstall=False):
     ps = getToolByName(self, 'portal_setup')
     
     for product in PRODUCT_DEPENDENCIES:
-        if reinstall and q.isProductInstalled(product):
+        if reinstall and qi.isProductInstalled(product):
             qi.reinstallProducts([product])
             transaction.savepoint()
         elif not qi.isProductInstalled(product):
