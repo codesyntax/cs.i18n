@@ -11,6 +11,8 @@
     <include package="plone.app.i18n"/>
     <include zcml:condition="installed Products.LinguaPlone" package="Products.LinguaPlone"/>
 
+  <include package=".browser" />
+
   <gs:registerProfile
       name="default"
       title="cs.i18n"
