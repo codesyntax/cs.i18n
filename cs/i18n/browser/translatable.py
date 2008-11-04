@@ -13,7 +13,5 @@ class TranslatableLanguageSelector(LSBase):
     def languages(self):
         """ Return languages sorted according to their native name """
         results = LSBase.languages(self)
-        import pdb;pdb.set_trace()
-        
         return sorted(results, lambda x,y:cmp(x['native'],y['native']))
 
