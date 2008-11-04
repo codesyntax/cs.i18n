@@ -6,12 +6,13 @@
         tal:condition="python:available and len(languages)>=2">
       <tal:langs repeat="lang languages">
         <li tal:define="code lang/code;
-                        selected lang/selected"
+                        selected lang/selected;
+                        url lang/url|string:${here/absolute_url}/switchLanguage?set_language=${code};"
             tal:condition="not:selected">
           <a href=""
-             tal:define="flag lang/flag;
+             tal:define="flag lang/flag|nothing;
                          name lang/native|lang/name;"
-             tal:attributes="href lang/url;
+             tal:attributes="href url;
                              title name">
             <tal:flag condition="python:flag and showFlags">
               <img width="14"
