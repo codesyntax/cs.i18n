@@ -14,7 +14,7 @@ PYTHONPATH, install it, and have plaintext links to get the language
 changed.
 
 We think that the language names must be shown in the native language:
-Espanol, Français, Euskara or English, not always in English or in the
+Espanol, Francais, Euskara or English, not always in English or in the
 interface's language.
 
 This is what our product does. You have just had to disable the "show
