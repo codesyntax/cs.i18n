@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.11'
+version = '1.0'
 
 setup(name='cs.i18n',
       version = version,
@@ -28,10 +28,12 @@ setup(name='cs.i18n',
           'setuptools',         
           # -*- Extra requirements: -*-
           'plone.browserlayer',
-          'plone.app.i18n',
-          'plone.memoize',
+          'Plone >= 4.0',
       ],
       entry_points="""
       # -*- Entry points: -*-
+
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )

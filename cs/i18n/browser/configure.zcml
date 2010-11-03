@@ -4,10 +4,19 @@
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="cs.i18n">
 
+  <browser:page
+      name="not_available"
+      for="*"
+      template="templates/available.pt"
+      class=".available.NotAvailableLanguage"
+      permission="zope2.View"
+      layer="..interfaces.Icsi18nProductLayer"
+      />
+
   <browser:viewlet
       for="*"
       name="cs.i18n.languageselector"
-      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".translatable.TranslatableLanguageSelector"
       permission="zope2.View"
       layer="..interfaces.Icsi18nProductLayer"
