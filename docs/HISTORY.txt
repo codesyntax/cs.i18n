@@ -1,6 +1,11 @@
 Changelog for cs.i18n
 
-    (name of developer listed in brackets)
+cs.i18n - 1.0
+    - Support LinguaPlone >= 4
+      [erral]
+
+    - Language fallback for translations that does not exist
+      [erral]
 
 cs.i18n - 0.8
 

@@ -5,8 +5,9 @@ version = '1.0'
 
 setup(name='cs.i18n',
       version = version,
-      description="Some i18n customizations for Plone default language change forms",
-      long_description=open(os.path.join('cs', 'i18n', 'README.txt')).read(),
+      description="Some i18n customizations for Plone language change viewlet",
+      long_description=open(os.path.join('cs', 'i18n', 'README.txt')).read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
